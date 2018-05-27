@@ -1,6 +1,7 @@
 import { Component, Input,  OnInit } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'app-PostListComponent',
   templateUrl: './PostListComponent.component.html',
   styleUrls: ['./PostListComponent.component.css']
@@ -21,10 +22,8 @@ export class PostListComponentComponent implements OnInit {
   onLoveit(e) {
     if (e === 'loveIts') {
       this.loveIts = this.loveIts + 1 ;
-      //this.comparaison();
     } else if (e === 'dontloveIts') {
       this.loveIts = this.loveIts - 1 ;
-     // this.comparaison();
     }
 
   }
